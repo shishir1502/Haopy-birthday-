@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Budi</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    iframe#audioPlayer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      border: none;
+      z-index: 1000;
+    }
+    iframe#contentFrame {
+      width: 100%;
+      height: calc(100vh - 60px);
+      border: none;
+    }
+    sembunyi{
+          display:none;
+          } 
+  </style>
+</head>
+<body>
+  <!-- Load audio player once -->
+  <iframe id="audioPlayer" src="player.html" allow="autoplay" class="sembunyi"></iframe>
+
+  <!-- Load content pages inside this frame -->
+  <iframe id="contentFrame" src="page1.html"></iframe>
+
+</body>
+</html>
